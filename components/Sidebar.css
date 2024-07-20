@@ -1,0 +1,64 @@
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -250px; /* Start off-screen */
+  background-color: rgba(10, 12, 14, 0.5); /* Light gray background with 80% opacity */
+  overflow-x: hidden;
+  transition: 0.3s; /* Smooth transition */
+  padding-top: 60px;
+  color: white;
+}
+
+.sidebar.open {
+  right: 0; /* Display on screen when open */
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #495057;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
